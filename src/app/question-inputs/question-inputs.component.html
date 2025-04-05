@@ -1,0 +1,73 @@
+<div class="name">
+  <mat-form-field class="example-full-width">
+    <mat-label>Nome</mat-label>
+    <input
+      matInput
+      placeholder="Ex: Bruno"
+      [(ngModel)]="questionInputs.name"
+      name="name"
+      required
+      minlength="3"
+      #nameInput="ngModel"
+    >
+    <mat-error *ngIf="nameInput.errors?.['required']">
+      O nome é obrigatório.
+    </mat-error>
+    <mat-error *ngIf="nameInput.errors?.['minlength']">
+      O nome deve ter pelo menos 3 caracteres.
+    </mat-error>
+  </mat-form-field>
+</div>
+
+<div class="altura">
+  <mat-form-field class="example-full-width">
+    <mat-label>Altura</mat-label>
+    <input
+      matInput
+      placeholder="Ex: 165 (cm)"
+      [(ngModel)]="questionInputs.height"
+      name="height"
+      required
+      type="number"
+      #heightInput="ngModel"
+    >
+    <mat-error *ngIf="heightInput.errors?.['required']">
+      A altura é obrigatória.
+    </mat-error>
+    <mat-error *ngIf="heightInput.errors?.['min']">
+      A altura deve ser maior que 0.
+    </mat-error>
+  </mat-form-field>
+</div>
+
+<div class="peso">
+  <mat-form-field class="example-full-width">
+    <mat-label>Peso</mat-label>
+    <input
+      matInput
+      placeholder="Ex: 62,5 (Kg)"
+      [(ngModel)]="questionInputs.weight"
+      name="weight"
+      required
+      type="number"
+      #weightInput="ngModel"
+    >
+    <mat-error *ngIf="weightInput.errors?.['required']">
+      O peso é obrigatório.
+    </mat-error>
+    <mat-error *ngIf="weightInput.errors?.['min']">
+      O peso deve ser maior que 0.
+    </mat-error>
+  </mat-form-field>
+</div>
+
+<div class="button-calculator">
+  <button
+    mat-flat-button
+    class="large-button"
+    (click)="showImc()"
+    [disabled]="!isFormValid()"
+  >
+    Calcular
+  </button>
+</div>

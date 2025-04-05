@@ -1,0 +1,9 @@
+<div class="result-div-container">
+    <div class="result-div">
+      <div class="result" [ngClass]="updateColorImc()">
+         Resultado: <br>
+         {{ name | uppercase }}, SEU IMC É DE {{ resultImc | number:'2.2-2' }} KG/M <sup>2</sup>
+      </div>
+      <span>De acordo com a Organização Mundial da Saúde, seu IMC está abaixo do recomendado para a sua altura. Para atingir um valor de IMC normal, seu peso deve estar entre <strong>{{ imcNormalMin | number: '1.1-1' }} e {{ imcNormalMax | number: '1.1-1' }} kg.</strong></span>
+    </div>
+  </div>

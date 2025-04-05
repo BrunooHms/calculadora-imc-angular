@@ -1,0 +1,13 @@
+.large-button {
+    width: 210px;
+    font-size: 20px;
+    height: 40px;
+    margin-top: 10px;
+}
+
+//Removendo as setas nos inputs númericos
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

@@ -1,0 +1,36 @@
+<div class="result-table-container">
+    <table class="result-table">
+      <thead>
+        <tr>
+          <th></th>
+          <th>IMC</th>
+          <th>PESO</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr [ngClass]="imcUpdateColor(0 , 18.5, 'bad')">
+          <td>Magreza</td>
+          <td>< 18.5</td>
+          <td>< {{ pesosReferencia.magreza | number:'1.1-1' }} Kg</td>
+        </tr>
+        <tr [ngClass]="imcUpdateColor(18.5 , 24.9, 'good')">
+          <td>Normal</td>
+          <td>18.5 a 24.9</td>
+          <td>{{pesosReferencia.normalMin | number:'1.1-1'}} a {{ pesosReferencia.normalMax | number:'1.1-1' }} Kg</td>
+        </tr>
+        <tr [ngClass]="imcUpdateColor(24.9, 30, 'bad')">
+          <td>Sobrepeso</td>
+          <td>24.9 a 30</td>
+          <td>{{ pesosReferencia.sobrepesoMin | number:'1.1-1' }} a {{ pesosReferencia.sobrepesoMax | number:'1.1-1' }} Kg</td>
+        </tr>
+        <tr [ngClass]="imcUpdateColor(30 , 3000, 'bad')">
+          <td>Obesidade</td>
+          <td> > 30 </td>
+          <td> > {{ pesosReferencia.obesidade | number:'1.1-1' }} Kg</td>
+        </tr>
+      </tbody>
+
+    </table>
+</div>
+
+
