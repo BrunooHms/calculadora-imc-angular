@@ -1,59 +1,69 @@
-# CalculadoraImc
+# 🏋️ Calculadora de IMC - Angular
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
+[![Angular Version](https://img.shields.io/badge/Angular-19.0.6-DD0031?logo=angular&style=flat)](https://angular.io/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## Development server
+![Screenshot da Calculadora de IMC](./src/assets/screenshot.png)
 
-To start a local development server, run:
+> Projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 19.0.6.
 
+## ✨ Funcionalidades
+- Cálculo automático do Índice de Massa Corporal (IMC)
+- Classificação em faixas: Magreza, Normal, Sobrepeso e Obesidade
+- Visualização de pesos ideais para cada faixa
+- Interface responsiva para desktop e mobile
+
+## 🚀 Como Executar
+
+### Servidor de Desenvolvimento
+Execute o servidor local com:
 ```bash
 ng serve
 ```
+Acesse http://localhost:4200 no navegador. A aplicação recarrega automaticamente ao modificar arquivos.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
+### Instalação
 ```bash
-ng generate component component-name
+npm install
 ```
+## 🛠️ Ferramentas do Angular CLI
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
+### Gerar Componentes
+```bash
+ng generate component nome-do-componente
+```
+### Para ver todas as opções disponíveis:
 ```bash
 ng generate --help
 ```
-
-## Building
-
-To build the project run:
-
+### Build de Produção
 ```bash
 ng build
 ```
+Artefatos serão gerados no diretório dist/.
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
+## Testes
+- Testes unitários:
+``` bash
 ng test
 ```
 
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
+- Testes end-to-end:
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+## 📊 Fórmula do IMC
+```bash
+IMC = peso (kg) / (altura (m)²)
+```
 
-## Additional Resources
+## 📌 Referências
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+[Tabela de IMC - OMS](https://www.who.int/europe/news-room/fact-sheets/item/a-healthy-lifestyle---who-recommendations)
+
+[Documentação Angular](https://v17.angular.io/docs)
+
+[Angular CLI](https://angular.dev/tools/cli)
+
+Nota: Este projeto foi gerado com Angular CLI. Para mais comandos e referências, consulte a [documentação oficial](https://angular.dev/tools/cli).
