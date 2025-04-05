@@ -3,7 +3,9 @@
 [![Angular Version](https://img.shields.io/badge/Angular-19.0.6-DD0031?logo=angular&style=flat)](https://angular.io/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-![Screenshot da Calculadora de IMC](./src/assets/screenshot.png)
+![Calculadora IMC Angular ](https://github.com/user-attachments/assets/e14b85c0-5378-45ab-91d3-71f0af74926c)
+
+
 
 > Projeto gerado com [Angular CLI](https://github.com/angular/angular-cli) versão 19.0.6.
 
