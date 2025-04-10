@@ -16,11 +16,10 @@ export class ResultComponent {
 
     
     updateColorImc(): string {
-        if(this.resultImc! > 18.5 && this.resultImc! < 24.9) {
-          return 'selected-good'
-        } else {
-          return 'selected-bad'
-        }
+      // dá uma olhada em operador ternariosx
+      return this.resultImc! > 18.5 && this.resultImc! < 24.9
+      ? 'selected-good'
+      : 'selected-bad';
     };
 
 }

@@ -22,7 +22,7 @@ export class ResultTableComponent {
         return undefined;
     };
 
-    ngOnChanges(changes: SimpleChanges) {
+    ngOnChanges(changes: SimpleChanges) { // porque usar o onchanges aqui ao inves de chamar junto com o calculo do imc?
       if(changes['altura']) {
         setTimeout(() => {
           this.calcularPesos()
